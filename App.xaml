@@ -1,0 +1,13 @@
+﻿<Application x:Class="VoaDownloaderWpf.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:VoaDownloaderWpf"
+             xmlns:converters="clr-namespace:VoaDownloaderWpf.Converters"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
+        <converters:InverseBooleanConverter x:Key="InverseBooleanConverter"/>
+        <converters:SenderToBrushConverter x:Key="SenderToBrushConverter"/>
+        <converters:SenderToAlignmentConverter x:Key="SenderToAlignmentConverter"/>
+    </Application.Resources>
+</Application>
